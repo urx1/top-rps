@@ -12,8 +12,21 @@ function game() {
     //console.log(user_choice);//
     //console.log(computer_choices[random])//
     if  (user_choice === computer_choices[random]) { 
-        console.log("tie");
-    }   else {
+        console.log("tie"); }
+    else if (user_choice === "r" && computer_choices[random] === "p") {
+        console.log("computer chose paper. you lose");
+    } else if (user_choice ==="r" && computer_choices[random] === "s") {
+        console.log("computer chose scissors. you win.");
+    } else if (user_choice === "p" && computer_choices[random] === "r") {
+        console.log("computer chose rock. you win");
+    } else if (user_choice === "p" && computer_choices[random] === "s") {
+        console.log("computer chose scissors. you lose");
+    } else if (user_choice === "s" && computer_choices[random] === "r") {
+        console.log("computer chose rock. you lose");
+    } else if (user_choice === "s" && computer_choices[random] === "p") {
+        console.log("computer chose paper. you win");
+    }
+      else {
         console.log("not a tie");
     }
 }
