@@ -1,10 +1,28 @@
-//get user choice and store in variable//
+// establish user_choice as blank, then get user_choice from buttons //
 
+//needs to be made into a loop that starts with click on button//
+
+let user_choice=""
+
+function user_rock() {
+    user_choice += "r";
+}
+
+function user_paper() {
+    user_choice += "p";
+}
+function user_scissors() {
+    user_choice += "s";
+}
+
+
+
+/*get user choice and store in variable
 
 let user_choice = prompt("r p or s?")
     user_choice = user_choice.toLowerCase();
 
-
+*/
 
 function game() {
     let computer_choices = ["r", "p", "s"];
@@ -31,9 +49,9 @@ function game() {
     }
 }
 
-game()
+//game()//
 
-
+console.log(user_choice)
 
 
 //console.log(user_choice);//
